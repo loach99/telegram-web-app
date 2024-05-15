@@ -4,7 +4,7 @@ import './App.css';
 import {useTelegram} from "./hooks/useTelegram";
 function App() {
   
-  const {tg} = useTelegram();
+  const {tg, onClose} = useTelegram();
 
   useEffect(() => {
     tg.ready();
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-          
+        <button onClick={onClose}>Закрыть</button>
     </div>
   );
 }
