@@ -1,8 +1,8 @@
 
-const Button = () => {
+const Button = (props) => {
 
     return ( 
-        <button >Закрыть</button>
+        <button onClick={props.onClose}>Закрыть</button>
      );
 }
  
